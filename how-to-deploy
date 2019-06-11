@@ -1,0 +1,1 @@
+npx angular-cli-ghpages --dir=dist/artist-website --cname=kayleighbeard.nl
