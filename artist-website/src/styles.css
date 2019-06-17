@@ -6,9 +6,13 @@ body {
     color: white;
 }
 
+@font-face {
+    font-family: 'titleFont';
+    src: url('./assets/fonts/vita.ttf');
+  }
+
 @media (min-width: 265px) {
     .poster-image {
-        
         margin-left: -180px !important; 
     }
 }
@@ -17,17 +21,37 @@ body {
     .poster-image {
         margin-left: -220px !important;
     }
+
+    h1 {
+        font-size: 1rem !important;
+    }
 }
 
 @media (min-width: 361px) {
     .poster-image {
         margin-left: -250px !important;
     }
+
+    .title {
+        margin-top: 130px !important;
+    }
+
+    h1 {
+        font-size: 1.2rem !important;
+    }
 }
 
 @media (min-width: 420px) {
     .poster-image {
         margin-left: -300px !important;
+    }
+
+    .title {
+        margin-top: 150px !important;
+    }
+
+    h1 {
+        font-size: 1.3rem !important;
     }
 }
 
@@ -36,12 +60,24 @@ body {
         margin-left: -220px !important;
         width: 150% !important;
     }
+
+    .title {
+        margin-top: 180px !important;
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+    }
 }
 
 @media (min-width: 570px) {
     .poster-image {
         margin-left: -150px !important;
         width: 130% !important;
+    }
+
+    h1 {
+        font-size: 2rem !important;
     }
 }
 
@@ -50,6 +86,7 @@ body {
         margin-left: -130px !important;
         width: 120% !important;
     }
+    
 }
 
 @media (min-width: 750px) {
@@ -57,12 +94,31 @@ body {
         margin-left: -80px !important;
         width: 110% !important;
     }
+    h1 {
+        font-size: 2.5rem !important;
+    }
 }
 
 @media (min-width: 850px) {
     .poster-image {
         margin-left: 0px !important;
         width: 100% !important;
+    }
+
+    .title {
+        margin-top: 220px !important;
+    }
+    h1 {
+        font-size: 2.7rem !important;
+    }
+}
+
+@media (min-width: 1033px) {
+    h1 {
+        font-size: 3.2rem !important;
+    }
+    .title {
+        margin-top: 320px !important;
     }
 }
 
@@ -81,4 +137,14 @@ body {
 
 .overlay-parent {
     position: relative;
+}
+
+h1 {
+    font-family: 'titleFont';
+    font-size: 0.7rem;
+    text-transform: capitalize;
+}
+
+.title {
+    margin-top: 120px;
 }
