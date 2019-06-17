@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <div class="row overlay-parent">
+    <div class="row overlay-child mt-5" [style.display]="loadingDisplay">
+      <div class="col"></div>
+      <div class="col text-center">
+        <div class="spinner-grow text-light" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+    <img class="poster-image" src="../assets/images/final.jpg" (load)="dosomething()" [style.visibility]="imageVisibility">
+  </div>
+</div>
