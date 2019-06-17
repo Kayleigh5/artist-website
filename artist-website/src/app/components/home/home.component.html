@@ -1,19 +1,17 @@
 <div class="container-fluid">
   <div class="row overlay-parent">
-    <div class="row overlay-child mt-5" [style.display]="loadingDisplay">
-      <div class="col"></div>
-      <div class="col text-center">
-        <div class="spinner-grow text-light" style="width: 6rem; height: 6rem;" role="status">
+    <div class="row overlay-child title">
+      <div class="col-2"></div>
+      <div class="col-4 title-name">
+        <h1>K a y l e i g h </h1>
+        <h1> B e a r d</h1>
+      </div>
+      <div class="col-4 text-center">
+        <div class="spinner-grow text-light loader" [style.display]="loadingDisplay" role="status">
           <span class="sr-only">Loading...</span>
         </div>
       </div>
-      <div class="col"></div>
-    </div>
-    <div class="row overlay-child title">
-        <div class="col-2"></div>
-        <div class="col-4 title-name"><h1>K a y l e i g h </h1> <h1> B e a r d</h1></div>
-        <div class="col-3"></div>
-        <div class="col-3"></div>
+      <div class="col-2"></div>
     </div>
     <img class="poster-image" src="../assets/images/final.jpg" (load)="dosomething()" [style.visibility]="imageVisibility">
   </div>

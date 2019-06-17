@@ -23,7 +23,7 @@ body {
     }
 
     h1 {
-        font-size: 1rem !important;
+        font-size: 0.9rem !important;
     }
 }
 
@@ -37,7 +37,7 @@ body {
     }
 
     h1 {
-        font-size: 1.2rem !important;
+        font-size: 1.1rem !important;
     }
 }
 
@@ -85,6 +85,11 @@ body {
     .poster-image {
         margin-left: -130px !important;
         width: 120% !important;
+    }
+
+    .loader {
+        width: 5rem !important; 
+        height: 5rem !important;
     }
     
 }
@@ -147,4 +152,10 @@ h1 {
 
 .title {
     margin-top: 120px;
+    margin-right: 0px;
+}
+
+.loader {
+    width: 2rem; 
+    height: 2rem;
 }

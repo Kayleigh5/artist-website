@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   }
 
   dosomething() {
-    this.imageVisibility = 'unset';
+      this.imageVisibility = 'unset';
     this.loadingDisplay = 'none';
   }
 
