@@ -1,9 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: black;
     color: white;
+    overflow-x:hidden;
 }
 
 @font-face {
@@ -13,8 +18,10 @@ body {
 
 .poster-image {
     margin-left: -150px;
+    margin-top: 20px;
     width: 180%;
     height: 100%;
+    z-index:-1;
 }
 
 .overlay-child {
@@ -23,24 +30,54 @@ body {
     left:0;
     right:0;
     bottom:0;
+    margin-right: 0px;
 }
 
 .overlay-parent {
     position: relative;
+    
 }
 
-h1 {
+h1, h5 {
     font-family: 'titleFont';
-    font-size: 0.7rem;
     text-transform: capitalize;
+    font-size: 0.8rem;
 }
 
 .title {
-    margin-top: 120px;
-    margin-right: 0px;
+    margin-top: 60px;
 }
 
 .loader {
     width: 2rem; 
     height: 2rem;
+}
+
+.blurry-transition {
+    box-shadow: 0 0 30px 30px black;
+}
+
+.page-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.content {
+    height: 500px;
+}
+
+.nav {
+    height: 5px;
+    background-color: black;
+    opacity: 0.9;
+}
+
+.nav-link {
+    color: white;
+    opacity: 0.8;
+}
+
+.nav-link:hover {
+    color: white;
+    opacity: 0.5;
 }
