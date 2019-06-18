@@ -14,6 +14,7 @@
     .title {
         margin-top: 100px;
     }
+    
 }
 
 @media (min-width: 310px) {
@@ -23,6 +24,10 @@
 
     h1 {
         font-size: 0.9rem;
+    }
+
+    .table>* {
+        font-size: 0.5rem;
     }
 }
 
@@ -38,6 +43,14 @@
 
     h1, h5 {
         font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .table>* {
+        font-size: 0.7rem;
     }
 }
 
@@ -65,12 +78,16 @@
         margin-top: 180px;
     }
 
-    h1 {
+    h1, h2 {
         font-size: 1.8rem;
     }
 
     h5 {
         font-size: 1.3rem;
+    }
+
+    .table>* {
+        font-size: 0.8rem;
     }
 }
 
@@ -80,7 +97,7 @@
         width: 130%;
     }
 
-    h1 {
+    h1, h2 {
         font-size: 1.9rem;
     }
 }
@@ -95,6 +112,10 @@
         width: 5rem; 
         height: 5rem;
     }
+
+    .table>* {
+        font-size: 0.9rem;
+    }
     
 }
 
@@ -103,7 +124,7 @@
         margin-left: -80px;
         width: 110%;
     }
-    h1 {
+    h1, h2 {
         font-size: 2.5rem;
     }
 }
@@ -117,16 +138,24 @@
     .title {
         margin-top: 220px;
     }
-    h1 {
+    h1, h2 {
         font-size: 2.7rem;
+    }
+
+    .table>* {
+        font-size: 1rem;
     }
 }
 
 @media (min-width: 1033px) {
-    h1 {
+    h1, h2 {
         font-size: 3.5rem;
     }
     .title {
         margin-top: 320px;
+    }
+
+    .table>* {
+        font-size: 1.1rem;
     }
 }

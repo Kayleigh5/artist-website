@@ -1,73 +1,43 @@
+
 <div class="blurry-transition">
   <div class="page-header text-center">
-    <h1>Live</h1>
-    <a name="targetLive" #target></a> 
+    <h2>Live</h2>
   </div>
 </div>
 
-<div class="row pt-3">
-
-  <div class="col text-center">
-
-      Upcoming
-    2019 Jan 17 20:30 Short Demo Performance Electrosonic, Groningen
-    -
-    2019 Feb 15 21:00 Performance Lola, Groningen
-    -
-    2019 Mar 21 ??:?? Performance SimplonUp, Groningen
-    -
-    2019 May 10 ??:?? Performance Betontegel, Groningen
-    
-    Past
-    2019 Jan 12 23:00 - 23:30 Performance Studio Droom & Vreesmann, Groningen
-    
-    2018 Oct 10 9:30 - 16:15 Installation Congres Gezonde Leefomgeving, Leeuwarden.
-    
-    2018 Sep 21 19:30 - 22:00 Performance Indoor Festival PhD Day, Groningen. 
-    
-    2018 Sep 21 12:45 - 14:00 Installation Career Fair PhD Day, Groningen. 
-    
-    2018 June 23 t/m 28 Performances Headliners, Former Sugar Factory, Groningen
-    
-    2018 May 13 14:30 Performance Sign Gallery, Groningen
-    
-    2018 Apr 1  17:00 Performance Festival Het Rumoer, Wolkenfabriek, Groningen
-    
-    2017 Dec 16 16:00 Performance Winterwelvaart, Groningen
-    
-    2017 Nov 25 16:00 Performance  Upstream Gallery, Amsterdam Art Weekend 
-    
-    2017 Nov 8 21:00 Performance Sounds of Music, Grand Theater, Groningen 
-    
-    2017 Oct 15 20:30 Performance Sunnyvale, New York City
-    
-    2017 Sep 29 day   Installation Healthy Ageing Festival, Groningen
-    
-    2017 Sep 24 16:00 Performance  DOT, Groningen
-    
-    2017 Jul 27 20:30 Performance  Taribush Kuna Festival, Dwingeloo 
-    
-    2017 May 20 15:00 Performance  The World We Live In, Groningen
-    
-    2017 May 13 day   Installation Frank Mohr Institute, Groningen
-    
-    2017 May 31 17:00 Performance  De Nieuwe Kolk, Assen
-    
-    2017 Mar 20 17:30 Performance  Frank Mohr Institute, Groningen
-    
-    2017 Mar 08 12:00 Performance  Minerva Theatre, Groningen
-    
-    2017 Feb 06 18:00 Performance  Club Transmediale (CTM) Festival, Berlin
-    
-    2016 Dec 20 day   Installation Orbit Light Festival, Groningen
-    
-    2016 Dec 19 day   Installation Orbit Light Festival, Groningen
-    
-    2016 Dec 10 21:00 Performance  Freeze Festival, Leeuwarden
-    
-    2016 Nov 25 14:00 Performance  Frank Mohr Institute, Groningen</div>
-  <div class="col text-center">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/eEpzWL6E-rY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="row">
+  <div class="col-xl text-center mt-4">
+    <div class="row">
+      <div class="col">
+        <iframe class="video" src="https://www.youtube.com/embed/LhrHwqvRF-w" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col">
+        <iframe class="video" src="https://www.youtube.com/embed/eEpzWL6E-rY" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
   </div>
-  
+  <div class="col-xl text-center mt-4">
+    <div class="container">
+      <div class="table-responsive-sm">
+        <table class="table table-sm w-100">
+          <tbody>
+            <tr *ngFor="let date of liveDates" class="mt-5" (click)="openLink(date)">
+              <th scope="row" class="text-left"> {{ date.date }} </th>
+              <td>{{ date.time }}</td>
+              <td>{{ date.type }}</td>
+              <td>{{ date.place }}</td>
+              <td>{{ date.city }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
 </div>
+
+<div class="temp"></div>
