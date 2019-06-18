@@ -15,8 +15,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  dosomething() {
-      this.imageVisibility = 'unset';
+  finishLoad() {
+    this.imageVisibility = 'unset';
     this.loadingDisplay = 'none';
   }
 
