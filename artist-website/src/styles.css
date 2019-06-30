@@ -10,6 +10,7 @@ body {
     background-color: black;
     color: white;
     overflow-x: hidden;
+    font-family: 'textFont';
 }
 
 h1, h2, h5 {
@@ -33,7 +34,7 @@ h2 {
 }
 
 @font-face {
-    font-family: 'tableFont';
+    font-family: 'textFont';
     src: url('./assets/fonts/LANENAR_.ttf');
 }
 
@@ -103,7 +104,7 @@ h2 {
 }
 
 .table>* {
-    font-family: 'tableFont';
+    font-family: 'textFont';
     font-size: 0.4rem;
 }
 

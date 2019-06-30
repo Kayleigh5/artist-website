@@ -4,5 +4,17 @@
 }
 
 .contact-image {
-    height: 25px;
+    height: 24px;
+}
+
+.social-image {
+    width: 40px;
+}
+
+.social-image:hover {
+    opacity: 0.5;
+}
+
+.link {
+    font-size: 1.5rem;
 }
