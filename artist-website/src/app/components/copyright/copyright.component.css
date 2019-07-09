@@ -1,0 +1,26 @@
+a {
+    font-size: 0.7rem;
+}
+
+#copyright-sign {
+    font-family: Arial;
+    margin-right: 3px;
+    font-size: 0.8rem;
+}
+
+.overlay-footer {
+    margin-top: -40px;   
+}
+
+.copyright {
+    opacity: 0.3;
+}
+
+.copyright:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.light {
+    opacity: 0.8;
+}

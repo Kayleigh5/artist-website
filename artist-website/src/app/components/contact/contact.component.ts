@@ -1,34 +1,46 @@
-import { Component, OnInit } from '@angular/core';
-import { stringify } from '@angular/compiler/src/util';
+import { Component, AfterViewInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent implements AfterViewInit {
 
   constructor() { }
+
+  @ViewChild('link') contact;
 
   innerHtml: string;
   link: string;
   loading = true;
 
-  ngOnInit() {
-    this.showContact();
+  imageVisibility = 'hidden';
+  loadingDisplay: string;
+
+  ngAfterViewInit() {
+    // this.showContact();
   }
 
   showContact() {
     setTimeout(() => {
       this.make();
-    }, 5000);
+    }, 10000);
   }
 
-  make() {
+  make(click?: boolean): void {
     const reverse = ['l', 'n', '.', 'd', 'r', 'a', 'e', 'b', 'h', 'g', 'i', 'e', 'l', 'y', 'a', 'k', '$', 't', 'c', 'a', 't', 'n', 'o', 'c'];
     this.innerHtml =  this.replace(reverse).reverse().join('');
-    this.link = 'mailto:' + this.innerHtml;
+    const reverseLink = ['l', 'n', '.', 'd', 'r', 'a', 'e', 'b', 'h', 'g', 'i', 'e', 'l', 'y', 'a', 'k', '$', 't', 'c', 'a', 't', 'n', 'o', 'c', ':', 'o', 't', 'l', 'i', 'a', 'm'];
+    this.link = this.replace(reverseLink).reverse().join('');
     this.loading = false;
+    if (click) {
+      window.location.href = this.link;
+    }
+  }
+
+  activate(event) {
+    this.make(true);
   }
 
   replace (list: Array<string>): Array<string>  {
@@ -39,6 +51,11 @@ export class ContactComponent implements OnInit {
       }
     }
     return newList;
+  }
+
+  finishImageLoad() {
+    this.loadingDisplay = 'none';
+    this.imageVisibility = 'unset';
   }
 
 }

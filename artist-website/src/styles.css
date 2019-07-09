@@ -4,6 +4,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -26,6 +28,11 @@ h1, h5 {
 h2 {
     font-size: 1.3rem;
     margin-top: 70px;
+}
+
+a, a:hover {
+    color: white;
+    text-decoration: none;
 }
 
 @font-face {

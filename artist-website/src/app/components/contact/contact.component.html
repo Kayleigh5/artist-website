@@ -10,18 +10,26 @@
   <div class="row overlay-parent">
     <div class="row overlay-child">
       <div class="col">
-          <div class="row contact-links">
-              <div class="col"></div>
-              <div class="col text-center">
-                <img *ngIf="loading" src="../../../assets/images/contact.png" class="contact-image">
-                <a class="nav-link link" *ngIf="innerHtml && !loading" [innerHtml]="innerHtml" [href]="link"></a>
-                <br>
-                <a href="https://www.youtube.com/channel/UCWSkiBsg9O6k_GNO23Mw75g" target="_blank"><img src="../../../assets/images/youtube.png" class="social-image m-3"></a>
-                <a href="https://soundcloud.com/kayleigh-beard" target="_blank"><img src="../../../assets/images/soundcloud.png" class="social-image m-3"></a>
-              </div>
-              <div class="col"></div>
-            </div>
+        <div class="row contact-links">
+          <div class="col"></div>
+          <div class="col text-center">
+            <img class="loader mb-3" src="assets/loader.svg" alt="Loading" title="loading" [style.display]="loadingDisplay"
+              role="status"> <br>
+            <img *ngIf="loading" src="../../../assets/images/contact2.png" class="contact-image"
+              (click)="activate($event)" alt="Contact Link">
+            <a *ngIf="innerHtml" class="link" [innerHtml]="innerHtml" [href]="link"></a>
+            <br>
+            <a href="https://www.youtube.com/channel/UCWSkiBsg9O6k_GNO23Mw75g/" target="_blank"><img
+                src="../../../assets/images/youtube.png" class="social-image m-3" alt="Youtube Logo"></a>
+            <a href="https://soundcloud.com/kayleigh-beard/" target="_blank"><img
+                src="../../../assets/images/soundcloud.png" class="social-image m-3" alt="Soundcloud Logo"></a>
+          </div>
+          <div class="col"></div>
+        </div>
       </div>
+    </div>
+    <img class="poster-image" src="../../../assets/images/contact-background.jpg" (load)="finishImageLoad()"
+      [style.visibility]="imageVisibility">
   </div>
-  <img class="poster-image" src="../../../assets/images/_DSC7586.jpg"></div>
+  <app-copyright background="light"></app-copyright>
 </div>
