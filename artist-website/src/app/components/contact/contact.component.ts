@@ -19,7 +19,7 @@ export class ContactComponent implements AfterViewInit {
   loadingDisplay: string;
 
   ngAfterViewInit() {
-    // this.showContact();
+    this.showContact();
   }
 
   showContact() {
@@ -29,13 +29,15 @@ export class ContactComponent implements AfterViewInit {
   }
 
   make(click?: boolean): void {
-    const reverse = ['l', 'n', '.', 'd', 'r', 'a', 'e', 'b', 'h', 'g', 'i', 'e', 'l', 'y', 'a', 'k', '$', 't', 'c', 'a', 't', 'n', 'o', 'c'];
-    this.innerHtml =  this.replace(reverse).reverse().join('');
-    const reverseLink = ['l', 'n', '.', 'd', 'r', 'a', 'e', 'b', 'h', 'g', 'i', 'e', 'l', 'y', 'a', 'k', '$', 't', 'c', 'a', 't', 'n', 'o', 'c', ':', 'o', 't', 'l', 'i', 'a', 'm'];
-    this.link = this.replace(reverseLink).reverse().join('');
-    this.loading = false;
-    if (click) {
-      window.location.href = this.link;
+    if (!this.innerHtml) {
+      const reverse = ['l', 'n', '.', 'd', 'r', 'a', 'e', 'b', 'h', 'g', 'i', 'e', 'l', 'y', 'a', 'k', '$', 't', 'c', 'a', 't', 'n', 'o', 'c'];
+      this.innerHtml = this.replace(reverse).reverse().join('');
+      const reverseLink = ['l', 'n', '.', 'd', 'r', 'a', 'e', 'b', 'h', 'g', 'i', 'e', 'l', 'y', 'a', 'k', '$', 't', 'c', 'a', 't', 'n', 'o', 'c', ':', 'o', 't', 'l', 'i', 'a', 'm'];
+      this.link = this.replace(reverseLink).reverse().join('');
+      this.loading = false;
+      if (click) {
+        window.location.href = this.link;
+      }
     }
   }
 
@@ -43,10 +45,10 @@ export class ContactComponent implements AfterViewInit {
     this.make(true);
   }
 
-  replace (list: Array<string>): Array<string>  {
+  replace(list: Array<string>): Array<string> {
     let newList = list;
     for (let i = 0; i < list.length; i++) {
-      if(list[i] === '$') {
+      if (list[i] === '$') {
         newList[i] = '@';
       }
     }
