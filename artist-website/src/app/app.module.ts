@@ -7,6 +7,7 @@ import { LiveComponent } from './components/live/live.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CopyrightComponent } from './components/copyright/copyright.component';
+import { MusicComponent } from './components/music/music.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CopyrightComponent } from './components/copyright/copyright.component';
     LiveComponent,
     MenuComponent,
     ContactComponent,
-    CopyrightComponent
+    CopyrightComponent,
+    MusicComponent
   ],
   imports: [
     BrowserModule

@@ -2,9 +2,9 @@
 
 export const liveDates: Array<Object> = [
     {
-        date: '2019 Jan 17',
-        time: '20:30',
-        place: 'Electrosonic',
+        date: '2019 Mar 21',
+        time: '21:00',
+        place: 'SimplonUp',
         city: 'Groningen'
     },
     {
@@ -14,9 +14,9 @@ export const liveDates: Array<Object> = [
         city: 'Groningen'
     },
     {
-        date: '2019 Mar 21',
-        time: '21:00',
-        place: 'SimplonUp',
+        date: '2019 Jan 17',
+        time: '20:30',
+        place: 'Electrosonic',
         city: 'Groningen'
     },
     {
