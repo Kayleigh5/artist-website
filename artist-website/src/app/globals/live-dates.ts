@@ -2,6 +2,12 @@
 
 export const liveDates: Array<Object> = [
     {
+        date: '2020 Apr 26',
+        time: '--:--',
+        place: 'The World We Live In Festival',
+        city: 'Groningen'
+    },
+    {
         date: '2019 Mar 21',
         time: '21:00',
         place: 'SimplonUp',
