@@ -23,7 +23,11 @@
     }
 
     h1 {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
+    }
+
+    .title {
+        margin-top: 150px;
     }
 
     .table>* {
@@ -46,7 +50,7 @@
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
     .table>* {
@@ -78,8 +82,11 @@
         margin-top: 180px;
     }
 
-    h1, h2 {
+    h1 {
         font-size: 1.8rem;
+    } 
+    h2 {
+        font-size: 2.7rem;
     }
 
     h5 {
@@ -97,8 +104,11 @@
         width: 130%;
     }
 
-    h1, h2 {
+    h1 {
         font-size: 1.9rem;
+    }
+    h2 {
+        font-size: 3rem;
     }
 }
 
@@ -124,8 +134,11 @@
         margin-left: -80px;
         width: 110%;
     }
-    h1, h2 {
+    h1 {
         font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 3.2rem;
     }
 }
 
@@ -138,8 +151,12 @@
     .title {
         margin-top: 220px;
     }
-    h1, h2 {
+    h1 {
         font-size: 2.7rem;
+    }
+
+    h2 {
+        font-size: 3.3rem;
     }
 
     .table>* {
@@ -157,5 +174,11 @@
 
     .table>* {
         font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 385px) {
+    .nav-link {
+        padding: 0.5rem 0.7rem;
     }
 }

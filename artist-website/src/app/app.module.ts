@@ -8,6 +8,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CopyrightComponent } from './components/copyright/copyright.component';
 import { MusicComponent } from './components/music/music.component';
+import { NewsComponent } from './components/news/news.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MusicComponent } from './components/music/music.component';
     MenuComponent,
     ContactComponent,
     CopyrightComponent,
-    MusicComponent
+    MusicComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule
