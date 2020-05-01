@@ -30,11 +30,6 @@ h2 {
     margin-top: 70px;
 }
 
-a, a:hover {
-    color: white;
-    text-decoration: none;
-}
-
 @font-face {
     font-family: 'titleFont';
     src: url('./assets/fonts/vita.ttf');
@@ -106,13 +101,13 @@ a, a:hover {
     background-color: black;
 }
 
-.nav-link {
+a, .nav-link {
     color: white;
-    opacity: 0.8;
 }
 
-.nav-link:hover {
+a:hover, .nav-link:hover {
     color: #FECA1D;
+    text-decoration: none;
 }
 
 .table {
