@@ -22,7 +22,8 @@ import { NewsComponent } from './components/news/news.component';
     NewsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

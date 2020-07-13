@@ -1,0 +1,83 @@
+#out-now {
+    font-size: 1.3rem;
+}
+
+.social-image {
+    width: 35px;
+    margin: 10px;
+}
+
+.dots {
+    height: 35px;
+}
+
+tr:hover {
+    cursor: pointer;
+}
+
+tr:hover>td {
+    color: #FECA1D;
+}
+
+tr:hover>td>img {
+    width: 40px;
+    margin: 7.5px;
+}
+
+.album-height {
+    height: 594px;
+}
+
+@media (max-width: 500px) {
+    .album-cover {
+        height: 250px;
+    }
+    table {
+        margin-left: 25%;
+    }
+}
+
+@media (min-width: 400px) {
+    .album-cover {
+        height: 400px;
+    }
+    table {
+        margin-left: 35%;
+    }
+}
+
+@media (min-width: 500px) {
+    .album-cover {
+        height: 500px;
+    }
+}
+
+@media (min-width: 600px) {
+    .album-cover {
+        height: 600px;
+    }
+}
+
+@media (min-width: 768px) {
+    table {
+        margin-left:0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .album-height {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1517px) {
+    .album-height {
+        height: 500px;
+    }
+}
+
+@media (min-width: 1810px) {
+    .album-height {
+        height: 600px;
+    }
+}
