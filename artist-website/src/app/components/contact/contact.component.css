@@ -4,7 +4,7 @@
 }
 
 .contact-image {
-    height: 24px;
+    height: 17px;
 }
 
 .social-image {
@@ -26,11 +26,21 @@
 }
 
 .link {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
 }
 
 .link:hover {
     color: #FECA1D;
     text-decoration: none;
+}
+
+@media (min-width: 400px) {
+    .contact-image {
+        height: 24px;
+    }
+    .link {
+        font-size: 1.5rem;
+    }
+    
 }
