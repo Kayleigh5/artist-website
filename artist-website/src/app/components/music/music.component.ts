@@ -12,4 +12,8 @@ export class MusicComponent implements OnInit {
   ngOnInit() {
   }
 
+  open(url: string) {
+    window.open(url, "_blank");
+  }
+
 }
