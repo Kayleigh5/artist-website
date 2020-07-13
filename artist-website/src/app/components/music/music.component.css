@@ -81,3 +81,16 @@ tr:hover>td>img {
         height: 600px;
     }
 }
+
+#more {
+    position: absolute;
+    top: 450px;
+    background-color: black;
+    border: solid 1px white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.x:hover {
+    cursor: pointer;
+}
