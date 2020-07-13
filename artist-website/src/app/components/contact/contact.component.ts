@@ -9,7 +9,7 @@ export class ContactComponent implements AfterViewInit {
 
   constructor() { }
 
-  @ViewChild('link', { static: false }) contact;
+  @ViewChild('link') contact;
 
   innerHtml: string;
   link: string;
