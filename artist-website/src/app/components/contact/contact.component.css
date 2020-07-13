@@ -7,13 +7,13 @@
     height: 17px;
 }
 
-.social-image {
+.contact-icon {
     opacity: 0.8;
     width: 40px;
     height: 40px;
 }
 
-.social-image:hover {
+.contact-icon:hover {
     opacity: 1;
 }
 
@@ -21,7 +21,7 @@
     opacity: 0.8;
 }
 
-.social-image:hover, .contact-image:hover {
+.contact-icon:hover, .contact-image:hover {
     cursor: pointer;
 }
 
