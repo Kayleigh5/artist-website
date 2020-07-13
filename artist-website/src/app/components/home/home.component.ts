@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 import { DeviceDetectorService } from 'ngx-device-detector';
 
@@ -10,6 +10,8 @@ import { DeviceDetectorService } from 'ngx-device-detector';
 export class HomeComponent implements OnInit {
 
   constructor(private deviceService: DeviceDetectorService) { }
+
+  @ViewChild('page') page: ElementRef;
 
   imageVisibility = 'hidden';
   loadingDisplay: string;
@@ -30,7 +32,7 @@ export class HomeComponent implements OnInit {
   finishLoad() {
     this.loadingDisplay = 'none';
     this.imageVisibility = 'unset';
-
+    this.page.nativeElement.classList.remove("full-height");
   }
 
 }
