@@ -1,13 +1,14 @@
-import { Component, AfterViewInit, ViewChild } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, OnInit } from '@angular/core';
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent implements AfterViewInit {
+export class ContactComponent implements AfterViewInit, OnInit {
 
-  constructor() { }
+  constructor(private deviceService: DeviceDetectorService) { }
 
   @ViewChild('link') contact;
 
@@ -18,8 +19,23 @@ export class ContactComponent implements AfterViewInit {
   imageVisibility = 'hidden';
   loadingDisplay: string;
 
+  backgroundSrc: string;
+
+  ngOnInit() {
+    const isMobile = this.deviceService.isMobile();
+    const isTablet = this.deviceService.isTablet();
+    if (isTablet) {
+      this.backgroundSrc = "../assets/images/contact-background-tablet.jpg";
+    } else if (isMobile) {
+      this.backgroundSrc = "../assets/images/contact-background-mobile.jpg"
+    } else {
+      this.backgroundSrc = "../assets/images/contact-background.jpg"
+    }
+  }
+
   ngAfterViewInit() {
     this.showContact();
+
   }
 
   showContact() {

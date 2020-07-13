@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { DeviceDetectorService } from 'ngx-device-detector';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,12 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private deviceService: DeviceDetectorService) { }
 
   imageVisibility = 'hidden';
   loadingDisplay: string;
+  src: string;
 
   ngOnInit() {
+    const isMobile = this.deviceService.isMobile();
+    const isTablet = this.deviceService.isTablet();
+    if (isTablet) {
+      this.src = "../assets/images/final-tablet.jpg";
+    } else if (isMobile) {
+      this.src = "../assets/images/final-mobile.jpg"
+    } else {
+      this.src = "../assets/images/final.jpg"
+    }
   }
 
   finishLoad() {
