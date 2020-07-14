@@ -25,7 +25,11 @@ tr:hover>td>img {
 }
 
 .album-height {
-    height: 594px;
+    height: 660px;
+}
+
+.iframe {
+    height: 400px !important;
 }
 
 @media (max-width: 500px) {
@@ -34,6 +38,12 @@ tr:hover>td>img {
     }
     table {
         margin-left: 25%;
+    }
+    .iframe {
+        height: 400px !important;
+    }
+    .link-table {
+        height: 660px !important;
     }
 }
 
@@ -52,9 +62,9 @@ tr:hover>td>img {
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
     .album-cover {
-        height: 600px;
+        height: 650px;
     }
 }
 
@@ -76,9 +86,9 @@ tr:hover>td>img {
     }
 }
 
-@media (min-width: 1810px) {
+@media (min-width: 1950px) {
     .album-height {
-        height: 600px;
+        height: 650px;
     }
 }
 
@@ -89,6 +99,8 @@ tr:hover>td>img {
     border: solid 1px white;
     padding: 20px;
     border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 10px;
 }
 
 .x:hover {

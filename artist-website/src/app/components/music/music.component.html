@@ -20,53 +20,57 @@
   </div>
   <div class="col col-xl-4 text-center">
     <a href="https://open.spotify.com/album/20DhxlKK80gUNGFAzfJGyn?si=BeT2bsPwQrWLqeDbnXxTeA" target="_blank"><img
-        src="../../../assets/images/oceans-pulse.jpg" class="album-height album-cover"></a>
+        src="../../../assets/images/oceans-pulse.jpg" class="album-height album-cover" alt="Album Cover"></a>
   </div>
   <div class="col-12 mt-5 d-xl-none"></div>
-
   <div class="col-12 col-md-7 col-xl-4 text-md-right text-center d-xl-none">
-    <iframe src="https://open.spotify.com/embed/album/20DhxlKK80gUNGFAzfJGyn" width="300" class="album-height"
+    <iframe src="https://open.spotify.com/embed/album/20DhxlKK80gUNGFAzfJGyn" width="300" class="album-height iframe"
       frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
   </div>
   <div class="col-12 mt-2 d-md-none"></div>
-  <div class="col-12 col-md-5 col-xl-4 text-center text-md-left album-height overflow-auto">
+  <div class="col-12 col-md-5 col-xl-4 text-center text-md-left album-height link-table overflow-auto">
     <div class="mb-2">Listen on </div>
     <div>
       <table>
         <tr (click)="open('https://open.spotify.com/album/20DhxlKK80gUNGFAzfJGyn?si=BeT2bsPwQrWLqeDbnXxTeA')">
-          <td><img src="../../../assets/images/spotify.png" class="contact-icon"></td>
+          <td><img src="../../../assets/images/spotify.png" class="contact-icon" alt="Spotify Logo"></td>
           <td>Spotify</td>
         </tr>
-        <tr (click)="open('https://music.apple.com/us/album/oceans-pulse/1522974361')">
-          <td><img src="../../../assets/images/apple-music.png" class="contact-icon"></td>
-          <td>Apple Music</td>
+        <tr (click)="open('https://kayleighbeard.bandcamp.com/album/oceans-pulse')">
+          <td><img src="../../../assets/images/bandcamp.png" class="contact-icon" alt="Bandcamp Logo"></td>
+          <td>Bandcamp</td>
         </tr>
         <tr (click)="open('https://soundcloud.com/kayleigh-beard')">
-          <td><img src="../../../assets/images/soundcloud.png" class="contact-icon"></td>
+          <td><img src="../../../assets/images/soundcloud.png" class="contact-icon" alt="SoundCloud Logo"></td>
           <td>SoundCloud</td>
         </tr>
+        <tr (click)="open('https://music.apple.com/us/album/oceans-pulse/1522974361')">
+          <td><img src="../../../assets/images/apple-music.png" class="contact-icon" alt="Apple Music Logo"></td>
+          <td>Apple Music</td>
+        </tr>
         <tr (click)="open('https://www.deezer.com/nl/album/159988192')">
-          <td><img src="../../../assets/images/deezer.png" class="contact-icon"></td>
+          <td><img src="../../../assets/images/deezer.png" class="contact-icon" alt="Deezer Logo"></td>
           <td>Deezer</td>
         </tr>
         <tr (click)="open('https://music.amazon.com/albums/B08CRTY1P1?tab=CATALOG')">
-          <td><img src="../../../assets/images/1.png" class="contact-icon"></td>
+          <td><img src="../../../assets/images/amazon.png" class="contact-icon" alt="Amazon Logo"></td>
           <td>Amazon Music</td>
         </tr>
-        <tr (click)="open('https://play.google.com/store/music/album/Kayleigh_Beard_Ocean_s_Pulse?id=Bcf3xld6isp7tdu6vbi3eo7ssbu')">
-          <td><img src="../../../assets/images/google-play.png" class="contact-icon"></td>
+        <tr
+          (click)="open('https://play.google.com/store/music/album/Kayleigh_Beard_Ocean_s_Pulse?id=Bcf3xld6isp7tdu6vbi3eo7ssbu')">
+          <td><img src="../../../assets/images/google-play.png" class="contact-icon" alt="Google Play Logo"></td>
           <td>Google Play</td>
         </tr>
         <tr (click)="open('https://www.youtube.com/playlist?list=OLAK5uy_nMr0QWA8nlfZ0kTQ41_T8Q2DofawS1paw')">
-          <td><img src="../../../assets/images/youtube.png" class="contact-icon"></td>
+          <td><img src="../../../assets/images/youtube.png" class="contact-icon" alt="Youtube Logo"></td>
           <td>Youtube</td>
         </tr>
         <tr (click)="open('https://tidal.com/album/148219848')">
-          <td><img src="../../../assets/images/tidal.png" class="contact-icon"></td>
+          <td><img src="../../../assets/images/tidal.png" class="contact-icon" alt="Tidal Logo"></td>
           <td>Tidal</td>
         </tr>
         <tr (click)="open('https://vm.tiktok.com/JLMoM2v/')">
-          <td><img src="../../../assets/images/tiktok.png" class="contact-icon"></td>
+          <td><img src="../../../assets/images/tiktok.png" class="contact-icon" alt="TikTok Logo"></td>
           <td>TikTok</td>
         </tr>
         <tr (click)="toggleMoreVisible()">
@@ -80,7 +84,8 @@
       <div *ngIf="moreIsVisible" id="more" class="text-right">
         <div class="row">
           <div class="col-1 text-right x" (click)="toggleMoreVisible()">x</div>
-          <div class="col-11">  Also available on: 7digital, Anghami, AWA, Claro Música, JioSaavn, KKBOX, MediaNet, NetEase, TDC, Tencent,
+          <div class="col-11"> Also available on: 7digital, Anghami, AWA, Claro Música, JioSaavn, KKBOX, MediaNet,
+            NetEase, TDC, Tencent,
             VerveLife, and Xiami.</div>
         </div>
       </div>
