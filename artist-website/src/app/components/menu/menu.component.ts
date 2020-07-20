@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private activatedRoute: ActivatedRoute) { }
+
+  currentPath: String
 
   ngOnInit() {
+    const currentPath =this.activatedRoute.snapshot.routeConfig.path;
+    if (currentPath !== null && currentPath !== '') {
+      this.currentPath = this.activatedRoute.snapshot.routeConfig.path;
+    } else {
+      this.currentPath = '';
+    }
   }
 
 }

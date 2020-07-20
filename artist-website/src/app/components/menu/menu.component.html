@@ -1,16 +1,16 @@
 <ul class="nav justify-content-center fixed-top blurry-transition">
   <li class="nav-item">
-    <a class="nav-link active" href="#">
+    <a class="nav-link active" href="{{ currentPath + '#' }}">
       <h5>Home</h5>
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#music">
+    <a class="nav-link" href="{{ currentPath + '#music' }}">
       <h5>Music</h5>
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#live">
+    <a class="nav-link" href="{{ currentPath + '#live'}}">
       <h5>Live</h5>
     </a>
   </li>
@@ -19,8 +19,13 @@
       <h5>Music</h5>
     </a>
   </li> -->
+  <li *ngIf="currentPath == 'epk'" class="nav-item">
+    <a class="nav-link" href="{{ currentPath + '#bio' }}">
+      <h5>Bio</h5>
+    </a>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="#contact">
+    <a class="nav-link" href="{{ currentPath + '#contact' }}">
       <h5>Contact</h5>
     </a>
   </li>

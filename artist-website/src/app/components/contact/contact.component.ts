@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ViewChild, OnInit } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, OnInit, Input } from '@angular/core';
 import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
@@ -11,6 +11,8 @@ export class ContactComponent implements AfterViewInit, OnInit {
   constructor(private deviceService: DeviceDetectorService) { }
 
   @ViewChild('link') contact;
+
+  @Input('epk') epk: boolean;
 
   innerHtml: string;
   link: string;

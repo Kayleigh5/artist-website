@@ -9,6 +9,10 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CopyrightComponent } from './components/copyright/copyright.component';
 import { MusicComponent } from './components/music/music.component';
+import { EpkComponent } from './components/epk/epk.component';
+import { AppRoutingModule } from './app-routing.module';
+import { MainComponent } from './components/main/main.component';
+import { BioComponent } from './components/bio/bio.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +22,15 @@ import { MusicComponent } from './components/music/music.component';
     MenuComponent,
     ContactComponent,
     CopyrightComponent,
-    MusicComponent
+    MusicComponent,
+    EpkComponent,
+    MainComponent,
+    BioComponent
   ],
   imports: [
     BrowserModule,
-    DeviceDetectorModule
+    DeviceDetectorModule,
+    AppRoutingModule
     
   ],
   providers: [],

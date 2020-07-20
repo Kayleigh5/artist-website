@@ -1,6 +1,11 @@
 .contact-links {
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 400px;
+}
+
+.website {
+    margin-top: 100px;
+    margin-bottom:  -100px;
 }
 
 .contact-image {

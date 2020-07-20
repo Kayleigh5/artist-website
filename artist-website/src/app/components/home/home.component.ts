@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
 
 import { DeviceDetectorService } from 'ngx-device-detector';
 
@@ -12,6 +12,8 @@ export class HomeComponent implements OnInit {
   constructor(private deviceService: DeviceDetectorService) { }
 
   @ViewChild('page') page: ElementRef;
+
+  @Input('epk') epk: boolean;
 
   imageVisibility = 'hidden';
   loadingDisplay: string;
