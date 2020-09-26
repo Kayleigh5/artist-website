@@ -2,10 +2,25 @@
 
 export const liveDates: Array<Object> = [
     {
-        date: '2020 Apr 26',
+        date: '2021 Feb 11',
         time: '--:--',
-        place: 'The World We Live In Festival',
-        city: 'Groningen'
+        place: 'Stukafest',
+        city: 'Groningen',
+        link: 'https://www.stukafest.nl/groningen/'
+    },
+    {
+        date: '2020 Okt 4',
+        time: '22:00',
+        place: 'SIGN Gallery',
+        city: 'Groningen',
+        link: 'https://sign2.nl/'
+    },
+    {
+        date: '2020 Okt 3',
+        time: '21:30',
+        place: 'Cinetol',
+        city: 'Amsterdam', 
+        link: 'https://amsterdamalternative.nl/tickets/10058'
     },
     {
         date: '2019 Mar 21',
