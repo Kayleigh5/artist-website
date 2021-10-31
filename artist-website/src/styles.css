@@ -40,16 +40,6 @@ h2 {
     src: url('./assets/fonts/LANENAR_.ttf');
 }
 
-@font-face {
-    font-family: 'popronde';
-    src: url('./assets/fonts/Popronde-Regular.ttf');
-}
-
-.popronde {
-    font-family: 'popronde';
-    font-size: 2rem;
-}
-
 .poster-image {
     margin-left: -150px;
     margin-top: 20px;

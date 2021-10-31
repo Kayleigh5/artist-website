@@ -2,8 +2,8 @@
 
 export const liveDates: Array<Object> = [
     {
-        date: '2021 Feb 11',
-        time: '--:--',
+        date: '2021 Feb 5',
+        time: '20:50',
         place: 'Stukafest',
         city: 'Groningen',
         link: 'https://www.stukafest.nl/groningen/'
@@ -18,7 +18,7 @@ export const liveDates: Array<Object> = [
     {
         date: '2020 Okt 3',
         time: '21:30',
-        place: 'Cinetol',
+        place: 'Cinetol (Popronde)',
         city: 'Amsterdam', 
         link: 'https://amsterdamalternative.nl/tickets/10058'
     },
