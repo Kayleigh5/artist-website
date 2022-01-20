@@ -2,6 +2,20 @@
 
 export const liveDates: Array<Object> = [
     {
+        date: '2022 May 22',
+        time: 'T.B.A.',
+        place: 'Fisherman\'s Friend Festival (as Dreamwater)',
+        city: 'Oostwold',
+        link: 'https://www.inhetwesterkwartier.nl/agenda/P31'
+    },
+    {
+        date: '2022 Mar 12',
+        time: 'T.B.A.',
+        place: 'Grasnapolsky',
+        city: 'Scheemda',
+        link: 'https://www.grasnapolsky.nl/'
+    },
+    {
         date: '2021 Feb 5',
         time: '20:50',
         place: 'Stukafest',
@@ -9,7 +23,7 @@ export const liveDates: Array<Object> = [
         link: 'https://www.stukafest.nl/groningen/'
     },
     {
-        date: '2020 Okt 4',
+        date: '2020 Oct 4',
         time: '22:00',
         place: 'SIGN Gallery',
         city: 'Groningen',
