@@ -25,9 +25,9 @@ export const liveDates: Array<Object> = [
     {
         date: '2020 Oct 4',
         time: '22:00',
-        place: 'SIGN Gallery',
-        city: 'Groningen',
-        link: 'https://sign2.nl/'
+        place: 'SIGN Gallery & Hyde Park Art Center',
+        city: 'Groningen & Chicago USA',
+        link: 'https://www.youtube.com/watch?v=8pNhEOEhPH8'
     },
     {
         date: '2020 Okt 3',
