@@ -2,15 +2,15 @@
 
 export const liveDates: Array<Object> = [
     {
-        date: '2022 May 22',
-        time: 'T.B.A.',
-        place: 'Fisherman\'s Friend Festival (as Dreamwater)',
-        city: 'Oostwold',
-        link: 'https://www.inhetwesterkwartier.nl/agenda/P31'
+        date: '2022 Apr 7',
+        time: '20:30',
+        place: 'Simplon',
+        city: 'Groningen',
+        link: 'https://simplon.nl/events/nore-kayleigh-beard/'
     },
     {
         date: '2022 Mar 12',
-        time: 'T.B.A.',
+        time: '14:00',
         place: 'Grasnapolsky',
         city: 'Scheemda',
         link: 'https://www.grasnapolsky.nl/'
