@@ -1,4 +1,4 @@
 from folder where src folder is located (in this case artist-website/artist-website), run:
 
-ng build --prod
+ng build --configuration production
 npx angular-cli-ghpages --dir=dist/artist-website --cname=kayleighbeard.nl
