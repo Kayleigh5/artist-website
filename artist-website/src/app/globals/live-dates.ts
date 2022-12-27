@@ -2,11 +2,18 @@
 
 export const liveDates: Array<Object> = [
     {
-        date: '2022 Apr 7',
-        time: '20:30',
+        date: '2023 Feb 2',
+        time: '21:30',
+        place: 'Preipop',
+        city: 'Groningen',
+        link: 'https://preipop.nl/'
+    },
+    {
+        date: '2022 Nov 17',
+        time: '21:00',
         place: 'Simplon',
         city: 'Groningen',
-        link: 'https://simplon.nl/events/nore-kayleigh-beard/'
+        link: 'https://simplon.nl/events/combo-qazam-kayleigh-beard/'
     },
     {
         date: '2022 Mar 12',
