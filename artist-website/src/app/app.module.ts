@@ -1,7 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { DeviceDetectorModule } from 'ngx-device-detector';
-
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { LiveComponent } from './components/live/live.component';
@@ -29,7 +27,6 @@ import { BioComponent } from './components/bio/bio.component';
   ],
   imports: [
     BrowserModule,
-    DeviceDetectorModule,
     AppRoutingModule
     
   ],
