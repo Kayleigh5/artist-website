@@ -46,6 +46,8 @@ h2 {
     width: 180%;
     height: 100%;
     z-index: -1;
+    padding-right: 0;
+    max-width:none;
 }
 
 .overlay-child {
