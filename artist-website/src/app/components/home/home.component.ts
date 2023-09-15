@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
   @ViewChild('page') page: ElementRef;
 
   @Input('epk') epk: boolean;
+  @Input('portfolio') portfolio: boolean;
 
   imageVisibility = 'hidden';
   loadingDisplay: string;
