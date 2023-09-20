@@ -1,5 +1,5 @@
 .media-content {
-    width: 700px;
+    width: 350px;
 }
 
 .description {
@@ -7,19 +7,27 @@
     padding-right: 20px;
 }
 
-
-
-
 @media (min-width: 650px) {
     .description {
         padding-left: 150px;
         padding-right: 150px;
     }
+    .media-content {
+        width: 500px;
+    }
+    
 }
 
 @media (min-width: 1106px) {
     .description {
         padding-left: 300px;
         padding-right: 300px;
+    }
+    .media-content {
+        width: 700px;
+    }
+
+    #smaller-media {
+        width: 400px;
     }
 }
