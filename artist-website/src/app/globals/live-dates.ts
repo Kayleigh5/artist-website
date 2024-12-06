@@ -2,6 +2,20 @@
 
 export const liveDates: Array<Object> = [
     {
+        date: '2024 Nov 29',
+        time: '20:00',
+        place: 'Dorpskerk',
+        city: 'Haren',
+        link: ''
+    },
+    {
+        date: '2024 Feb 16',
+        time: '13:30',
+        place: 'Mantel der Liefde',
+        city: 'Eindhoven',
+        link: 'https://eindhoven.op-shop.nl/13416/mantel-der-liefde/24-02-2024?disable_filter=1'
+    },
+    {
         date: '2023 Feb 2',
         time: '21:30',
         place: 'Preipop',

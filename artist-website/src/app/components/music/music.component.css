@@ -32,6 +32,19 @@ tr:hover>td>img {
     height: 400px !important;
 }
 
+.text-right {
+    text-align: right;
+}
+
+.mabon-row {
+    display: flex;
+    justify-content: center;
+}
+
+.mabon-container {
+    max-width: 550px;
+}
+
 @media (max-width: 500px) {
     .album-cover {
         height: 250px;
