@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as globals from '../../globals/live-dates';
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
   selector: 'app-live',
@@ -8,12 +9,25 @@ import * as globals from '../../globals/live-dates';
 })
 export class LiveComponent implements OnInit {
 
-  constructor() { }
+  constructor(private deviceService: DeviceDetectorService) { }
 
   liveDates: Array<Object>;
+  src = '../assets/images/kayleighbeard-simplon-Ioanalorgu.JPG';
+
+  imageVisibility = 'hidden';
+  loadingDisplay: string;
 
   ngOnInit() {
     this.liveDates = globals.liveDates;
+    const isMobile = this.deviceService.isMobile();
+    const isTablet = this.deviceService.isTablet();
+    if (isTablet) {
+      this.src = "../assets/images/kayleighbeard-simplon-Ioanalorgu-tablet.JPG";
+    } else if (isMobile) {
+      this.src = "../assets/images/kayleighbeard-simplon-Ioanalorgu-mobile.JPG";
+    } else {
+      this.src = "../assets/images/kayleighbeard-simplon-Ioanalorgu.JPG";
+    }
   }
 
   openLink(date) {
@@ -22,6 +36,11 @@ export class LiveComponent implements OnInit {
     } else {
       window.open("https://www.youtube.com/c/KayleighBeard5", "_blank")
     }
+  }
+
+  finishLoad() {
+    this.loadingDisplay = 'none';
+    this.imageVisibility = 'unset';
   }
 
 }

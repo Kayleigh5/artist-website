@@ -26,3 +26,7 @@
 .epk {
     margin-top: -24px;
 }
+
+h1 {
+    white-space: nowrap;
+}

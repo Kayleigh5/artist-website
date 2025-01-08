@@ -5,6 +5,15 @@
 </div>
 
 <div class="row">
+  <div class="col blurry-transition">
+    <img class="loader" src="assets/loader.svg" alt="Loading" title="loading" [style.display]="loadingDisplay" role="status">
+    <img id="banner" [src]="src" (load)="finishLoad()" alt="Banner live performance picture" [style.visibility]="imageVisibility">
+  </div>
+</div>
+
+<div class="row blurry-transition"></div>
+
+<div class="row">
   <div class="col-xl text-center mt-4">
 
       <iframe width="315" height="560" src="https://www.youtube.com/embed/FH_lfHQtvJk" title="YouTube video player"
@@ -30,7 +39,7 @@
         <table class="table table-sm w-100">
           <tbody>
             <tr *ngFor="let date of liveDates" class="mt-5" (click)="openLink(date)">
-              <th scope="row" class="text-left"> {{ date.date }} </th>
+              <th scope="row" class="text-left date"> {{ date.date }} </th>
               <td>{{ date.time }}</td>
               <td>{{ date.type }}</td>
               <td>{{ date.place }}</td>

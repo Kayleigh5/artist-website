@@ -24,11 +24,11 @@ export class HomeComponent implements OnInit {
     const isMobile = this.deviceService.isMobile();
     const isTablet = this.deviceService.isTablet();
     if (isTablet) {
-      this.src = "../assets/images/final-tablet.jpg";
+      this.src = "../assets/images/home-background-tablet.JPG";
     } else if (isMobile) {
-      this.src = "../assets/images/final-mobile.jpg"
+      this.src = "../assets/images/home-background-mobile.JPG"
     } else {
-      this.src = "../assets/images/final.jpg"
+      this.src = "../assets/images/home-background.JPG"
     }
   }
 

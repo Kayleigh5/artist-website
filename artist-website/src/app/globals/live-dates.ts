@@ -2,6 +2,13 @@
 
 export const liveDates: Array<Object> = [
     {
+        date: '2025 Jan 25',
+        time: '15:30',
+        place: 'Y2',
+        city: 'Groningen',
+        link: 'https://y2.nu/'
+    },
+    {
         date: '2024 Nov 29',
         time: '20:00',
         place: 'Dorpskerk',

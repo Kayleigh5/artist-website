@@ -1,3 +1,13 @@
 iframe {
     margin: 1rem;
 }
+
+#banner {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.date {
+    white-space: nowrap;
+}
