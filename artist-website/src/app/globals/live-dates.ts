@@ -2,7 +2,21 @@
 
 export const liveDates: Array<Object> = [
     {
-        date: '2025 Jan 25',
+        date: '2025 May 15',
+        time: '20:15',
+        place: 'De Peter, Pieternel & Meindert show',
+        city: 'Zuidhorn',
+        link: 'https://www.intholt1654.nl/'
+    },
+    {
+        date: '2025 Mar 08',
+        time: '12:00 & 14:30',
+        place: 'Museum van de Tijdelijkheid',
+        city: 'Eindhoven',
+        link: 'https://werkenuitleg.nl/'
+    },
+    {
+        date: '2025 Feb 22',
         time: '15:30',
         place: 'Y2',
         city: 'Groningen',
