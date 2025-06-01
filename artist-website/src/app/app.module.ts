@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './components/main/main.component';
 import { BioComponent } from './components/bio/bio.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { HarpComponent } from './components/harp/harp.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     EpkComponent,
     MainComponent,
     BioComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    HarpComponent
   ],
   imports: [
     BrowserModule,

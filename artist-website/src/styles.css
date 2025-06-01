@@ -36,6 +36,11 @@ h2 {
 }
 
 @font-face {
+    font-family: 'fairyFont';
+    src: url('./assets/fonts/ElegantoSans-Thin.ttf');
+}
+
+@font-face {
     font-family: 'textFont';
     src: url('./assets/fonts/LANENAR_.ttf');
 }

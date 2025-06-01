@@ -1,5 +1,6 @@
 import { Component, AfterViewInit, ViewChild, OnInit, Input } from '@angular/core';
 import { DeviceDetectorService } from 'ngx-device-detector';
+import { ContactService } from '../../services/contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -8,7 +9,7 @@ import { DeviceDetectorService } from 'ngx-device-detector';
 })
 export class ContactComponent implements AfterViewInit, OnInit {
 
-  constructor(private deviceService: DeviceDetectorService) { }
+  constructor(private deviceService: DeviceDetectorService, private contactService: ContactService) { }
 
   @ViewChild('link') contact;
 
@@ -48,10 +49,8 @@ export class ContactComponent implements AfterViewInit, OnInit {
 
   make(click?: boolean): void {
     if (!this.innerHtml) {
-      const reverse = ['l', 'n', '.', 'd', 'r', 'a', 'e', 'b', 'h', 'g', 'i', 'e', 'l', 'y', 'a', 'k', '$', 't', 'c', 'a', 't', 'n', 'o', 'c'];
-      this.innerHtml = this.replace(reverse).reverse().join('');
-      const reverseLink = ['l', 'n', '.', 'd', 'r', 'a', 'e', 'b', 'h', 'g', 'i', 'e', 'l', 'y', 'a', 'k', '$', 't', 'c', 'a', 't', 'n', 'o', 'c', ':', 'o', 't', 'l', 'i', 'a', 'm'];
-      this.link = this.replace(reverseLink).reverse().join('');
+      this.innerHtml = this.contactService.getReverseMail();
+      this.link = this.contactService.getReverseMailTo();
       this.loading = false;
       if (click) {
         window.location.href = this.link;
@@ -61,16 +60,6 @@ export class ContactComponent implements AfterViewInit, OnInit {
 
   activate(event) {
     this.make(true);
-  }
-
-  replace(list: Array<string>): Array<string> {
-    let newList = list;
-    for (let i = 0; i < list.length; i++) {
-      if (list[i] === '$') {
-        newList[i] = '@';
-      }
-    }
-    return newList;
   }
 
   finishImageLoad() {
