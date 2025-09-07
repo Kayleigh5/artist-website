@@ -39,11 +39,11 @@
         <table class="table table-sm w-100">
           <tbody>
             <tr *ngFor="let date of liveDates" class="mt-5" (click)="openLink(date)">
-              <th scope="row" class="text-left date"> {{ date.date }} </th>
-              <td>{{ date.time }}</td>
-              <td>{{ date.type }}</td>
-              <td>{{ date.place }}</td>
-              <td>{{ date.city }}</td>
+              <th [class.grey]="isInPast(date.date)" scope="row" class="text-left date"> {{ date.date }} </th>
+              <td [class.grey]="isInPast(date.date)">{{ date.time }}</td>
+              <td [class.grey]="isInPast(date.date)">{{ date.type }}</td>
+              <td [class.grey]="isInPast(date.date)">{{ date.place }}</td>
+              <td [class.grey]="isInPast(date.date)">{{ date.city }}</td>
             </tr>
           </tbody>
         </table>

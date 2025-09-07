@@ -43,4 +43,14 @@ export class LiveComponent implements OnInit {
     this.imageVisibility = 'unset';
   }
 
+  isInPast(string) {
+    const date = new Date(string);
+    const currentDate = new Date();
+    console.log(string, date, currentDate);
+    if (date < currentDate) {
+      return true;
+    }
+    return false;
+  }
+
 }

@@ -11,3 +11,7 @@ iframe {
 .date {
     white-space: nowrap;
 }
+
+.grey {
+    color: grey;
+}

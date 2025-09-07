@@ -2,6 +2,13 @@
 
 export const liveDates: Array<Object> = [
     {
+        date: '2025 Sep 21',
+        time: '13:00',
+        place: 'Het Paleis',
+        city: 'Groningen',
+        link: 'https://www.hortusebbinge.nl/post/open-dag-het-paleis-21-september'
+    },
+    {
         date: '2025 May 15',
         time: '20:15',
         place: 'De Peter, Pieternel & Meindert show',
@@ -72,7 +79,7 @@ export const liveDates: Array<Object> = [
         link: 'https://www.youtube.com/watch?v=8pNhEOEhPH8'
     },
     {
-        date: '2020 Okt 3',
+        date: '2020 oct 3',
         time: '21:30',
         place: 'Cinetol (Popronde)',
         city: 'Amsterdam', 
