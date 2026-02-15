@@ -1,12 +1,20 @@
 // link is not 'required'
 
 export const liveDates: Array<Object> = [
+
     {
-        date: '2025 Sep 21',
-        time: '13:00',
-        place: 'Het Paleis',
+        date: '2026 Apr 12',
+        time: '14:00',
+        place: 'ALBUM RELEASE PARTY! @EdanZ',
         city: 'Groningen',
-        link: 'https://www.hortusebbinge.nl/post/open-dag-het-paleis-21-september'
+        link: 'https://hipsy.nl/event/186442-kayleigh-beard-album-release-party-eco-vinyl'
+    },
+     {
+        date: '2026 Mar 05',
+        time: '20:30',
+        place: 'Simplon',
+        city: 'Groningen',
+        link: 'https://simplon.nl/events/up-thistle-sifter-kayleigh-beard/'
     },
     {
         date: '2025 May 15',
