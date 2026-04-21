@@ -28,11 +28,11 @@ export class ContactComponent implements AfterViewInit, OnInit {
     const isMobile = this.deviceService.isMobile();
     const isTablet = this.deviceService.isTablet();
     if (isTablet) {
-      this.backgroundSrc = "../assets/images/contact-background-tablet.JPG";
+      this.backgroundSrc = "../assets/images/contact-background-tablet.jpg";
     } else if (isMobile) {
-      this.backgroundSrc = "../assets/images/contact-background-mobile.JPG"
+      this.backgroundSrc = "../assets/images/contact-background-mobile.jpg"
     } else {
-      this.backgroundSrc = "../assets/images/contact-background.JPG"
+      this.backgroundSrc = "../assets/images/contact-background.jpg"
     }
   }
 

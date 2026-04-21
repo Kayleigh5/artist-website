@@ -1,6 +1,21 @@
 // link is not 'required'
 
 export const liveDates: Array<Object> = [
+    {
+        date: '2026 Jun 27',
+        time: '22:00',
+        place: 'Let\'s Start a Fire Festival',
+        city: 'Jonkersland',
+        link: 'https://letsstartafire.com/festival/'
+    },
+
+    {
+        date: '2026 Jun 6',
+        time: '14:00',
+        place: 'Maté Nacht',
+        city: 'Utrecht',
+        link: 'https://matenacht.nl/'
+    },
 
     {
         date: '2026 Apr 12',
