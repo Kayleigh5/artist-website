@@ -48,7 +48,6 @@ export class HarpComponent {
 
   activatePhone(event) {
     event.preventDefault();
-    console.log('ja');
     this.makePhone();
   }
 

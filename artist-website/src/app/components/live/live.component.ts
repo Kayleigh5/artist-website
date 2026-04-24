@@ -46,7 +46,6 @@ export class LiveComponent implements OnInit {
   isInPast(string) {
     const date = new Date(string);
     const currentDate = new Date();
-    console.log(string, date, currentDate);
     if (date < currentDate) {
       return true;
     }
