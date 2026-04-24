@@ -22,4 +22,5 @@ export class MusicComponent implements OnInit {
     this.moreIsVisible = ! this.moreIsVisible;
   }
 
+
 }
